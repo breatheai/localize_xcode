@@ -81,9 +81,9 @@ class Localize:
                 json.dump(data, f, indent=2, ensure_ascii=False)
 
         except FileNotFoundError:
-            print(f"Error: File not found at '{file_path}'")
+            print(f"Error: File not found at '{self.input_file_path}'")
         except json.JSONDecodeError:
-            print(f"Error: Invalid JSON format in '{file_path}'")
+            print(f"Error: Invalid JSON format in '{self.input_file_path}'")
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
 
