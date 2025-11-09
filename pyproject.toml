@@ -1,0 +1,42 @@
+[project]
+name = "localize_xcode"
+version = "0.1.0"
+description = "A Python project following best practices."
+authors = [
+    { name = "Alan Cooper", email = "alan.cooper@breatheai.app" }
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+requires-python = ">=3.7"
+
+dependencies = [
+    "python-dotenv",
+    "google-cloud-translate"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "flake8",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 88
+target-version = ['py312', 'py313', 'py314']
+
+[tool.mypy]
+strict = true
+

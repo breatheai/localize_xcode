@@ -1,0 +1,5 @@
+google-cloud-translate
+
+[dev]
+pytest
+flake8

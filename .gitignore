@@ -1,0 +1,26 @@
+google-services.json
+.env
+build/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Editor files
+.vscode/
+.idea/
+
+# Test reports
+.pytest_cache/
+htmlcov/
+
+# Logs
+*.log
+

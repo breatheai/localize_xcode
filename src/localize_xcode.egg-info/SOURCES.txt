@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/localize_xcode.egg-info/PKG-INFO
+src/localize_xcode.egg-info/SOURCES.txt
+src/localize_xcode.egg-info/dependency_links.txt
+src/localize_xcode.egg-info/requires.txt
+src/localize_xcode.egg-info/top_level.txt
+tests/test_main.py
