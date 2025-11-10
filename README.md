@@ -78,7 +78,7 @@ Example .env with values that contain secrets or values not likely to change
 ```bash
 GOOGLE_APPLICATION_CREDENTIALS="Path to your Google Cloud json credentials file with permissions to call the Localization API"
 GOOGLE_PROJECT_ID="Your Google Cloud project id .i.e. cs-host-??????????????????????"
-LANGUAGES="en, es, fr, pt, it, de"
+LANGUAGES="en,es,fr,pt,it,de"
 ```
 # run localize_xcode
 
@@ -87,4 +87,55 @@ LANGUAGES="en, es, fr, pt, it, de"
 ```bash
 cp -p ./Localizable.xcstrings ./Localizable.xcstrings.ORIGINAL
 python3 src/main.py --file ./Localizable.xcstrings
+```
+### Expected Result
+
+```json
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "HELLO_WORLD": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hello World"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hola Mundo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonjour le monde"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Olá, mundo!"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciao mondo"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hallo Welt"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
 ```
