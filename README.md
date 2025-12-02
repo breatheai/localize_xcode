@@ -3,7 +3,7 @@
 Localizable.xcstrings is Apple's modern, structured file format for managing localized strings in Xcode consolidating
 all translatable content into a single, JSON-like catalog.
 
-## Example Localizable.xcstrings
+## Example (input) Localizable.xcstrings
 
 ```json
 {
@@ -88,7 +88,7 @@ LANGUAGES="en,es,fr,pt,it,de"
 cp -p ./Localizable.xcstrings ./Localizable.xcstrings.ORIGINAL
 python3 src/main.py --file ./Localizable.xcstrings
 ```
-### Expected Result
+### Expected (output) Localizable.xcstrings
 
 ```json
 {
