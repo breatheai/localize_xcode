@@ -88,7 +88,7 @@ LANGUAGES="en,es,fr,pt,it,de"
 cp -p ./Localizable.xcstrings ./Localizable.xcstrings.ORIGINAL
 python3 src/main.py --file ./Localizable.xcstrings
 ```
-### Expected (output) Localizable.xcstrings
+### Example (expected output) Localizable.xcstrings
 
 ```json
 {
