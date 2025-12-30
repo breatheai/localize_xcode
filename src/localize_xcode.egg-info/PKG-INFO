@@ -8,6 +8,7 @@ Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.7
 License-File: LICENSE.md
+Requires-Dist: python-dotenv
 Requires-Dist: google-cloud-translate
 Provides-Extra: dev
 Requires-Dist: pytest; extra == "dev"
